@@ -71,12 +71,15 @@ function checkWinner(){
     }
     
 }
-
 function restartGame(){
     currentPlayer = "X";
     options = ["","","","","","","","",""];
     statusText.textContent = `${currentPlayer}'s turn`;
     cells.forEach(cell => cell.textContent = "");
     running = true;
+}
 
+//Code fore menu
+function showMenu(){
+    document.getElementById('sidebar').classList.toggle("active");
 }
