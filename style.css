@@ -1,20 +1,42 @@
+body {
+    background-image: url("https://data2.polantis.com/image1000/data/1/1/145/TilesMedium0020_M.jpg");
+}
+#gameContainer{
+    font-family:cursive;
+    text-align: center;
+}
 #cellContainer{
     display: flex;
     flex-wrap: wrap;
-    width: 350px;
+    width: 329px;
     margin: auto;
+    background-color:rgb(255, 228, 196, 0.4);
 }
 .cell{
     width: 100px;
     height: 100px;
-    border: 2px solid;
+    border: 5px solid;
     box-shadow: 0 0 0 2px;
     line-height: 75px;
     font-size: 75px;
     cursor: pointer;
 }
-#gameContainer{
-    font-family:'Courier New', Courier, monospace;
-    text-align: center;
+#restart{
+    font-size: 20px;
+    cursor: pointer;
 }
-
+#title, #statusText {
+    font-weight: bold;
+    color: #000000;
+    font-size: 50px;
+    animation: glow 10s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #008ae6, 0 0 40px #008ae6, 0 0 50px #008ae6, 0 0 60px #008ae6, 0 0 70px #008ae6;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #4a21ff, 0 0 40px #4a21ff, 0 0 50px #4a21ff, 0 0 60px #4a21ff, 0 0 70px #4a21ff, 0 0 80px #4a21ff;
+    }
+}
